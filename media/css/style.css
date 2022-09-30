@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+/* General */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+body {
+	background-color: rgba(254, 204, 0, 1);
+	background-image: url("../img/fondo.jpg");
+	padding: 30px;
+}
+
+main {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 50px;
+}
+
+section {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 40px;
+}
+
+h1,
+h2 {
+	font-family: 'Fredoka One', cursive;
+}
+
+h1 {
+	font-size: 40px;
+}
+
+h2 {
+	font-size: 30px;
+}
+
+iframe {
+	border-radius: 15px;
+	width: 100%;
+	max-width: 600px;
+}
+
+/* Hero */
+
+.logo {
+	display: block;
+	margin: 0px auto;
+	width: 100%;
+}
+
+.logo img {
+	width: 300px;
+}
+
+.mainTitle {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.mainTitle h1 {
+	max-width: 600px;
+}
+
+.video {
+	width: 100%;
+	display: block;
+	margin: 0px auto;
+}
+
+/* Podcast */
+
+.podcastTitle{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.podcastFrame {
+	width: 100%;
+}
+
+/* Game */
+
+.gameTitle {
+	padding: 10px;
+}
+
+.gameContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gameContainer iframe {
+	height: 100%;
+	max-width: 1000px;
+	min-height: 700px;
+}
+
+/* Footer */
+
+.footer {
+	width: 100%;
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer a{
+	text-decoration: none;
+	color: black;
+}
+
+.footer i {
+	font-size: 40px;
+}
+
+/*aca es el css del juego*/
+@media screen and (max-width: 768px) {
+	.gameContainer iframe {
+		min-height: 500px;
+	}
+}

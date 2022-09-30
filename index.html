@@ -1,39 +1,71 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="media/css/style.css">
+
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Title -->
     <title>Prosegur</title>
 </head>
+
 <body>
-    <div class ="logo"><img class="imagenlogo"src="imagenes/logo2.png"></div>
-    <div class ="main-title">
-        <h1 class="title">Recomendaciones de seguridad para tu hogar </h1>
-    </div>
+    <main>
+        <section id="hero" class="hero">
+            <div class="logo">
+                <img src="media/img/logo2.png" alt="Logo Prosegur">
+            </div>
+            <br><br>
+            <div class="mainTitle">
+                <h1 class="title">Recomendaciones de seguridad para tu hogar!</h1>
+            </div>
 
-    <!--Aca va el video-->
-    <div class="video" style="width:75%;display:block;margin:0px auto">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/59ApPBuXhyc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
+            <!--Aca va el video-->
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/59ApPBuXhyc"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
 
+        <section id="podcast" class="podcast">
+            <div class="podcastTitle">
+                <h2>¿Queres saber mas?</h2>
+                <h1>Escucha nuestro podcast aquí</h1>
+            </div>
+            <!--aca va el podcast-->
+            <div class="podcastFrame">
+                <iframe src="https://open.spotify.com/embed/episode/5LuLQtubkupCoelDALwyqU?utm_source=generator"
+                    width="100%" height="152" frameBorder="0" allowfullscreen=""
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+                </iframe>
+            </div>
+        </section>
 
-    <div class="subtitule">
-        <h3 class="subtitulo">¿Queres saber mas?</h3>
-        <h1 class="subsubtitulo">Escucha nuestro podcast aquí</h1>  
-    </div>
-    <!--aca va el podcast-->
-    <div class="podcast">
-        <iframe style="border-radius:12px;width:75%" src="https://open.spotify.com/embed/episode/5LuLQtubkupCoelDALwyqU?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-        </div>
-    </div>
-    <h1 class="titulojuego">¿Que te parece si repasamos jugando?</h1>
-    <!--aca va el juego-->
-    <div style="width: 100%;padding:15px;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genial.ly/63333ccfe23bd40019dfe090" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
-    <footer class="footer"> 
-        <h3 class="hoja">Tema 1</h3>
-        <button class="boton"></button>
-    </footer> 
+        <section id="game" class="game">
+            <h1 class="gameTitle">¿Que te parece si repasamos jugando?</h1>
+            <!--aca va el juego-->
+            <div class="gameContainer">
+                <iframe frameborder="0" src="https://view.genial.ly/63333ccfe23bd40019dfe090" type="text/html"
+                    allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="footer">
+        <a href=""><i class='bx bxs-left-arrow'></i></a>
+        <h2 class="hoja">Tema 1</h2>
+        <a href=""><i class='bx bxs-right-arrow'></i></a>
+    </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
